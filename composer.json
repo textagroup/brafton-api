@@ -1,0 +1,13 @@
+{
+    "name": "textagroup/brafton-api",
+    "type": "silverstripe-module",
+    "keywords": ["Brafton", "Castleford", "SilverStripe"],
+    "description": "SilverStripe module to fetch feeds from Brafton API",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kirk Mayo",
+            "email": "kirk.mayo@solnet.co.nz"
+        }
+    ]
+}
