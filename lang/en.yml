@@ -1,0 +1,11 @@
+en:
+  BraftonApi:
+    BRAFTONAPIKEY: 'Brafton Api Key'
+    BRAFTONAPIURL: 'Brafton Api Url'
+    DEFAULTAPIURL: 'http://api.brafton.com/'
+  BraftonNewsCategory:
+    PLURALNAME: 'News Categories'
+    SINGULARNAME: 'News Category'
+  BraftonNewsItem:
+    PLURALNAME: 'News Items'
+    SINGULARNAME: 'News Item'
