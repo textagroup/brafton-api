@@ -2,7 +2,6 @@
 /**
  * @package BraftonApi
  */
-*/
 
 namespace brafton;
 
