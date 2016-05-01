@@ -4,8 +4,12 @@ class BraftonService extends RestfulService {
     private $api;
 
     public function __construct() {
-        $apiUrl = 'http://api.brafton.com/';
-        $apiKey = 'dada3480-9d3b-4989-876a-663fdbe48be8';
+        $siteConfig = SiteConfig::current_site_config();
+        $apiUrl = $siteConfig->BraftonApiUrl;
+        $apiKey = $siteConfig->BraftonApiKey;
+        if (!$apiUrl || !$apiKey) {
+            return null;
+        }
 
         $this->api = new \brafton\APIHandler($apiKey, $apiUrl);
     }

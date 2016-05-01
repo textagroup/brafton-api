@@ -55,8 +55,6 @@ class FetchBraftonBlogItemsJob extends BuildTask {
                 }
                 $news->write();
             }
-        } else { 
-            echo '<p>Not Connected</p>';
         }   
     }   
 }  
