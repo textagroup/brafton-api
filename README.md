@@ -48,4 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 To use the module you will need to specify the api key and api URL in the Brafton
 tab of settings.
-
+The module contains a task to connect to the API and retrieve the content and images from the
+Brafton API.
+The images are stored in assets as a normal SilverStripe Image and the items and categories
+are stored in the DataObjects BraftonNewsItem and BraftonNewsCategory.
