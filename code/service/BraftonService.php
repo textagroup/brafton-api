@@ -126,7 +126,7 @@ class BraftonService extends RestfulService {
      * @param Object Brafton Photo Instance
      * @param String URL of image
      * @param Object Brafton news instance
-     * @return File File Object
+     * @return Image
      */
     public function createImageFile($photo, $url, $item) {
         $tmpImage = tmpfile();
@@ -162,12 +162,12 @@ class BraftonService extends RestfulService {
         fwrite($image, $fileContents);
         fclose($image);
 
-        $file = new File();
-        $file->setParentID($imageFolder->ID);
-        $file->setName($name);
-        $file->Title = $photo->getAlt();
-        $file->setFilename($relativeImagePath);
-        $file->write();
-        return $file;
+        $image = new Image();
+        $image->setParentID($imageFolder->ID);
+        $image->setName($name);
+        $image->Title = $photo->getAlt();
+        $image->setFilename($relativeImagePath);
+        $image->write();
+        return $image;
     }
 }
