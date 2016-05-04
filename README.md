@@ -46,4 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Usage ##
 
-To use the module you will need to specify the api key and api url
+To use the module you will need to specify the api key and api URL in the Brafton
+tab of settings.
+

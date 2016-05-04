@@ -22,11 +22,11 @@ class BraftonNewsItem extends DataObject
         'Content' => 'HTMLText'
     );
 
-    private static $many_many = array(
-        'Categories' => 'BraftonNewsCategory'
+    private static $has_many = array(
+        'Photos' => 'BraftonNewsItemImage'
     );
 
-    private static $has_many = array(
-        'Photos' => 'Image'
+    private static $many_many = array(
+        'Categories' => 'BraftonNewsCategory'
     );
 }
