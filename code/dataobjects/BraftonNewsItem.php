@@ -16,6 +16,7 @@ class BraftonNewsItem extends DataObject
         'CreatedDate' => 'Datetime',
         'LastModifiedDate' => 'Datetime',
         'Headline' => 'Text',
+        'Extract' => 'Text',
         'Categories' => 'Text',
         'HtmlTitle' => 'Text',
         'HtmlMetaDescription' => 'Text',

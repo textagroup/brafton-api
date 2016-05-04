@@ -66,6 +66,8 @@ class BraftonService extends RestfulService {
         $news->CreatedDate = $item->getCreatedDate();
         $news->LastModifiedDate = $item->getLastModifiedDate();
         $news->Headline = $item->getHeadline();
+        $news->Extract = $item->getExtract();
+        $news->Title = $item->getHtmlTitle();
         $news->HtmlTitle = $item->getHtmlTitle();
         $news->HtmlMetaDescription = $item->getHtmlMetaDescription();
         $news->Content = $item->getText();
