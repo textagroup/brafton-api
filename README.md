@@ -48,7 +48,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 To use the module you will need to specify the api key and api URL in the Brafton
 tab of settings.
+
 The module contains a task to connect to the API and retrieve the content and images from the
 Brafton API.
+
 The images are stored in assets as a normal SilverStripe Image and the items and categories
 are stored in the DataObjects BraftonNewsItem and BraftonNewsCategory.
+
+This module acts as a wrapper for the [http://www.brafton.com/support/php-sample/](Brafton API library).
+
+A good example of how this works is the job to fetch the blog items [code/jobs/FetchBraftonBlogItemsJob.php](FetchBraftonBlogItemsJob). 
+This calls the Braftonservice class and the constructor handles connecting and creating a API object which can then be retrieved by the method getApi
+
+```
+        $service = new BraftonService();
+        $api = $service->getApi();
+        if ($api) {
+            $newsItems = $api->getNewsHTML();
+            foreach ($newsItems as $item) {
+                $service->addNews($item);
+            }
+        }
+```
