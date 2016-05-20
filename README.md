@@ -55,9 +55,9 @@ Brafton API.
 The images are stored in assets as a normal SilverStripe Image and the items and categories
 are stored in the DataObjects BraftonNewsItem and BraftonNewsCategory.
 
-This module acts as a wrapper for the [http://www.brafton.com/support/php-sample/](Brafton API library).
+This module acts as a wrapper for the [Brafton API library](http://www.brafton.com/support/php-sample/).
 
-A good example of how this works is the job to fetch the blog items [code/jobs/FetchBraftonBlogItemsJob.php](FetchBraftonBlogItemsJob). 
+A good example of how this works is the job to fetch the blog items [FetchBraftonBlogItemsJob](code/jobs/FetchBraftonBlogItemsJob.php). 
 This calls the Braftonservice class and the constructor handles connecting and creating a API object which can then be retrieved by the method getApi
 
 ```
